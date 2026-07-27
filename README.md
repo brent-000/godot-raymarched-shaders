@@ -11,8 +11,10 @@ Some of the information in this repo may be inaccurate.
 
 ```gdshader
 vec3 ro = CAMERA_POSITION_WORLD; // camera position as ray origin
+
 vec3 rd = normalize((INV_VIEW_MATRIX * vec4(VERTEX, 0.0)).xyz); 
  // Transform position of the fragment (pixel), in view space to a directional world space vector.
+
 float t = 0.; // total ray distance travelled
 ```
 
@@ -56,12 +58,12 @@ Signed Distance Fractals: TODO
 
 ## Reference
 
-	https://www.youtube.com/watch?v=khblXafu7iA -  An introduction to Raymarching by kishimisu
-												the structure of my raymarching shader came from this video for the most part.
+https://www.youtube.com/watch?v=khblXafu7iA - An introduction to Raymarching by kishimisu
+											  the structure of my raymarching shader came from this video for the most part.
 
-	https://iquilezles.org/articles/distfunctions/ - distance functions by Inigo Quilez
+https://iquilezles.org/articles/distfunctions/ - distance functions by Inigo Quilez
 
-	https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html - GDShader built-ins and other documentation
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html - GDShader built-ins and other documentation
 
 ## Troubles
 
