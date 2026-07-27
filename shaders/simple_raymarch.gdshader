@@ -1,7 +1,7 @@
 shader_type spatial;
 
-void vertex() {
-	// Called for every vertex the material is visible on.
+void vertex() 
+{
 }
 
 float SdSphere(vec3 p, float r)
@@ -13,7 +13,8 @@ float SdSphere(vec3 p, float r)
 	return length(p) - r;
 }
 
-void fragment() {
+void fragment() 
+{
 	// Called for every pixel the material is visible on.
 
 	//ALBEDO = VERTEX;
@@ -23,10 +24,10 @@ void fragment() {
 
 	float t = 0.; // total ray distance travelled
 
-	// Raymarching
+	// Raymarching loop
 
-
-	for (int i = 0; i < 80; i++){
+	for (int i = 0; i < 80; i++)
+	{
 		vec3 p = ro + rd * t;
 
 		float d = SdSphere(p, 1.0); // distance to sphere of radius 1.

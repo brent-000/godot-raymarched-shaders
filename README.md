@@ -2,6 +2,11 @@
 
 Raymarching / SDF shaders in Godot 4
 
+## Note:
+
+I know very little linear algebra and I've only been working on shaders for about 2 months.
+Some of the information in this repo may be inaccurate.
+
 ### Ray setup
 
 ```gdshader
@@ -17,13 +22,14 @@ float t = 0.; // total ray distance travelled
  for (int i = 0; i < 80; i++){
 	vec3 p = ro + rd * t; // this is what marches the ray. 
 	
-	float d = SdSphere(p, 1.0); // distance to sphere of radius 1.
+	float d = SdScene(p); // Signed distance map. 
+						  // This can just be a primitive or multiple primitives using combinators.
 
-	t += d; // march the ray length by its distance to the sphere.
+	t += d; // march the ray length by its distance to the scene.
 
-	ALBEDO = vec3(float(i)) / 80.; // This colors by steps to converge. 
+	ALBEDO = vec3(float(i)) / 80.; // This colors by steps. 
 							       // since we step by distance, near miss rays will have more steps, 
-								   // so this value approaches 1 which creates a glowing effect.
+								   // which creates a glowing effect.
 
 	if (d < .001) break; // ray distance to sphere is so small we count it as a hit and break.
 	if (t > 100.) break; // ray shot off into narnia, so break.
