@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cqjarv55qnvpx"]
+
+[ext_resource type="Shader" uid="uid://74e3f4nrkaiq" path="res://shaders/simple_raymarch.gdshader" id="1_dy6v2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_56aus"]
+render_priority = 0
+shader = ExtResource("1_dy6v2")
+
+[sub_resource type="QuadMesh" id="QuadMesh_kjl6r"]
+
+[node name="Node3D" type="Node3D" unique_id=712079544]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1930125460]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 2.7056804)
+material_override = SubResource("ShaderMaterial_56aus")
+mesh = SubResource("QuadMesh_kjl6r")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=814977858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.722178)
