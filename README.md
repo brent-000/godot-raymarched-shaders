@@ -45,6 +45,8 @@ Signed Distance Sphere:
 length(point) - radius --- returns the distance from a point to the origin minus the radius of the sphere.
                            positive values mean the point is outside of the sphere, negative means inside.
 
+![Signed Distance Sphere](imgs/SdSphere.png)
+
 Signed Distance Fractals: TODO
 
 ### Combinators (TODO)
