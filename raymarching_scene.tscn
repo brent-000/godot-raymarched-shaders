@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqjarv55qnvpx"]
 
-[ext_resource type="Shader" uid="uid://74e3f4nrkaiq" path="res://shaders/simple_raymarch.gdshader" id="1_dy6v2"]
+[ext_resource type="Shader" uid="uid://dchidtjm1qe1g" path="res://shaders/translating-raymarched-shader.gdshader" id="1_dy6v2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8601b"]
 render_priority = 0
@@ -11,7 +11,7 @@ shader = ExtResource("1_dy6v2")
 [node name="Node3D" type="Node3D" unique_id=712079544]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1930125460]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 2.7056804)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -0.84410584, 0.26491687, 2.3489711)
 material_override = SubResource("ShaderMaterial_8601b")
 mesh = SubResource("QuadMesh_kjl6r")
 

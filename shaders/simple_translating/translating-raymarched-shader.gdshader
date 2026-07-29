@@ -19,7 +19,7 @@ float TranslatingSdSphere(vec3 p, float r)
 void fragment() 
 {
 	vec3 ro = CAMERA_POSITION_WORLD;
-	vec3 rd = normalize((INV_VIEW_MATRIX * vec4(VERTEX, 0.0)).xyz);
+	vec3 rd = normalize((INV_VIEW_MATRIX * vec4(VERTEX, 0.0)).xyz); 
 	float t = 0.;
 
 	for (int i = 0; i < 80; i++)
