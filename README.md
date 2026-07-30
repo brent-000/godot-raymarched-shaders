@@ -52,7 +52,7 @@ positive values mean the point is outside of the sphere, negative means inside.
 
 ![Signed Distance Sphere](imgs/SdSphere.png)
 
-![Translating SDF]<video src="imgs/translating_sphere.mp4" width="320" height="240" controls></video>
+https://github.com/user-attachments/assets/c282c089-4721-4cd3-a437-46ef0aa91ee1
 
 Signed Distance Fractals: TODO
 
