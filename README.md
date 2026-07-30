@@ -44,10 +44,15 @@ float t = 0.; // total ray distance travelled
 
 Signed Distance Sphere:
 
-length(point) - radius --- returns the distance from a point to the origin minus the radius of the sphere.
-                           positive values mean the point is outside of the sphere, negative means inside.
+```gdshader
+length(point) - radius
+``` 
+returns the distance from a point to the origin minus the radius of the sphere.
+positive values mean the point is outside of the sphere, negative means inside.
 
 ![Signed Distance Sphere](imgs/SdSphere.png)
+
+![Translating SDF](imgs/translating_sdf.mp4)
 
 Signed Distance Fractals: TODO
 
@@ -64,6 +69,8 @@ https://www.youtube.com/watch?v=khblXafu7iA - An introduction to Raymarching by 
 https://iquilezles.org/articles/distfunctions/ - distance functions by Inigo Quilez
 
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html - GDShader built-ins and other documentation
+
+https://jbaker.graphics/writings/DEC.html - Even more signed distance functions. 
 
 ## Troubles
 

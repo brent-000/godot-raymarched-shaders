@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqcnb4aqrsvxy"
-path="res://.godot/imported/SdSphere.png-d3344f488990f1a69822aca43d4aceba.ctex"
+path="res://.godot/imported/SdSphere.png-090665c984ea9c51f9e77725d796f980.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imgs/SdSphere.png"
-dest_files=["res://.godot/imported/SdSphere.png-d3344f488990f1a69822aca43d4aceba.ctex"]
+source_file="res://examples/SdSphere.png"
+dest_files=["res://.godot/imported/SdSphere.png-090665c984ea9c51f9e77725d796f980.ctex"]
 
 [params]
 

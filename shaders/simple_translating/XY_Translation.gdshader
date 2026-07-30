@@ -9,7 +9,7 @@ instance uniform float amplitude : hint_range(0.0, 5.0) = 0.0;
 
 float TranslatingSdSphere(vec3 p, float r)
 {
-	p.z += 10.0; // move further back to see x/y translations better
+	p.z += 5.0; // move further back to see x/y translations better
 	p.y += cos(TIME) * amplitude; // Using time in godot for translation.
 	p.x += sin(TIME) * amplitude; // Also, translating is as simple as changing the xyz values.
 					  
