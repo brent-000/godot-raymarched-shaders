@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqjarv55qnvpx"]
 
-[ext_resource type="Shader" uid="uid://brc70smbgi285" path="res://shaders/combinators/smoothmin.gdshader" id="1_dy6v2"]
+[ext_resource type="Shader" uid="uid://icmnl6ya8as6" path="res://shaders/ray_traced/ray_traced.gdshader" id="1_dy6v2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8601b"]
 render_priority = 0
