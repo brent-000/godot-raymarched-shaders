@@ -99,3 +99,5 @@ vec3 rd = normalize(VERTEX); 	 // vertex position as the ray direction
 ```
 The problem: VERTEX is the pixel position in view space. Transforming this position into a directional world space vector fixes the position of the sphere.
 
+
+SdFractal looks like it has planes in the Y axis occluding the rest of the fractal.
