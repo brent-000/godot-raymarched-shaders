@@ -10,7 +10,8 @@ float SdFractal(vec3 p0){
 	p.xyz += 1.0;
     for(int i = 0; i < 8; i++){
       p.xyz = mod(p.xyz-1., 2.)-1.;
-      p*=(1.2/dot(p.xyz,p.xyz));
+      p*=((1.2+sin(TIME)*0.1)/dot(p.xyz,p.xyz));
+	 
     }
     p/=p.w;
     return abs(p.y)*0.25;

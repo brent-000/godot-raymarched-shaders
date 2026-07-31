@@ -44,8 +44,7 @@ vec3 calcNormals(vec3 p)
 	q.z -= ep;
 	result.z = sdScene(p) - sdScene(q); // slope of z on distance function
 
-	return result/ep; // someone please tell me theres a less cringe way to do this
-
+	return result/ep; 
 }
 
 void fragment() 
@@ -55,18 +54,36 @@ void fragment()
 
 	float t = 0.; 
 
-	for (int i = 0; i < 80; i++)
+	for (int i = 0; i < 3; i++)
 	{
-		vec3 p = ro + rd * t;
+		vec3 p;
+		t = 0.;
+		for (int i = 0; i < 80; i++)
+		{
+			p = ro + rd * t;
+			float d = sdScene(p);
 
-		float d = sdScene(p); 
+			t += d; 
 
-		t += d; 
+			if (d < .001) 
+			{
+				ALBEDO = rd;
+				break;
+			} 
+			if (t > 1000.) 
+			{
+				ALBEDO = vec3(0);
+				break;
+			} 
+		}
+		
+		vec3 n = calcNormals(p);
 
-		ALBEDO = calcNormals(p) * 0.5 + 0.5; 
+		rd = reflect(rd, n);
 
-		if (d < .001) break; 
-		if (t > 100.) break; 
+
+		// fix it tomorrow surely		
 	}
+	
 }
 
