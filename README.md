@@ -42,7 +42,7 @@ float t = 0.; // total ray distance travelled
 
 ### SDFs
 
-Signed Distance Sphere:
+## Signed Distance Sphere:
 
 ```gdshader
 length(point) - radius
@@ -52,11 +52,11 @@ positive values mean the point is outside of the sphere, negative means inside.
 
 ![Signed Distance Sphere](imgs/SdSphere.png)
 
-Translating Distance Function:
+## Translating Distance Function:
 
 https://github.com/user-attachments/assets/c282c089-4721-4cd3-a437-46ef0aa91ee1
 
-Signed Distance Fractals - From Jon Baker's SDF entries (https://jbaker.graphics/writings/DEC.html):
+## Signed Distance Fractals - From Jon Baker's SDF entries (https://jbaker.graphics/writings/DEC.html):
 
 ```gdshader
 float de( vec3 p0 )
