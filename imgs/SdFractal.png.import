@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqcnb4aqrsvxy"
-path="res://.godot/imported/SdSphere.png-d3344f488990f1a69822aca43d4aceba.ctex"
+uid="uid://qf4o8oq4bhou"
+path="res://.godot/imported/SdFractal.png-082c69be1287c2ad1534026a05096c43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imgs/SdSphere.png"
-dest_files=["res://.godot/imported/SdSphere.png-d3344f488990f1a69822aca43d4aceba.ctex"]
+source_file="res://imgs/SdFractal.png"
+dest_files=["res://.godot/imported/SdFractal.png-082c69be1287c2ad1534026a05096c43.ctex"]
 
 [params]
 

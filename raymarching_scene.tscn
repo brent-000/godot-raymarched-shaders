@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cqjarv55qnvpx"]
 
-[ext_resource type="Shader" uid="uid://dchidtjm1qe1g" path="res://shaders/simple_translating/XY_Translation.gdshader" id="1_dy6v2"]
+[ext_resource type="Shader" uid="uid://dycvi71ma0x2" path="res://shaders/fractals/fractal.gdshader" id="1_dy6v2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_8601b"]
 render_priority = 0

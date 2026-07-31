@@ -52,9 +52,26 @@ positive values mean the point is outside of the sphere, negative means inside.
 
 ![Signed Distance Sphere](imgs/SdSphere.png)
 
+Translating Distance Function:
+
 https://github.com/user-attachments/assets/c282c089-4721-4cd3-a437-46ef0aa91ee1
 
-Signed Distance Fractals: TODO
+Signed Distance Fractals - From Jon Baker's SDF entries (https://jbaker.graphics/writings/DEC.html):
+
+```gdshader
+float de( vec3 p0 )
+{
+    vec4 p = vec4(p0, 1.);
+    for(int i = 0; i < 8; i++){
+      p.xyz = mod(p.xyz-1., 2.)-1.;
+      p*=(1.2/dot(p.xyz,p.xyz));
+    }
+    p/=p.w;
+    return abs(p.x)*0.25;
+}
+```
+
+![Signed Distance Fractal](imgs/SdFractal.png)
 
 ### Combinators (TODO)
 
